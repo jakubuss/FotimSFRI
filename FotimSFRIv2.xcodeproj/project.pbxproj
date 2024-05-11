@@ -7,8 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B07B1532BEE275C002A238B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3B07B1522BEE275C002A238B /* FirebaseAuth */; };
+		3B07B1552BEE275C002A238B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3B07B1542BEE275C002A238B /* FirebaseFirestore */; };
+		3B07B1572BEE275C002A238B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B07B1562BEE275C002A238B /* FirebaseFirestoreSwift */; };
+		3B07B1592BEE287F002A238B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B07B1582BEE287F002A238B /* GoogleService-Info.plist */; };
+		3B07B1602BEE5FD5002A238B /* PolozkyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B15F2BEE5FD5002A238B /* PolozkyItemView.swift */; };
+		3B07B1622BEE6003002A238B /* PolozkaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1612BEE6003002A238B /* PolozkaView.swift */; };
+		3B07B1682BEE6047002A238B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1672BEE6047002A238B /* LoginView.swift */; };
+		3B07B16A2BEE6053002A238B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1692BEE6053002A238B /* RegisterView.swift */; };
+		3B07B16C2BEE6091002A238B /* NovaPolozkaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B16B2BEE6091002A238B /* NovaPolozkaView.swift */; };
+		3B07B16E2BEE60DF002A238B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B16D2BEE60DF002A238B /* ProfileView.swift */; };
+		3B07B1702BEE636C002A238B /* Pouzivatel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B16F2BEE636C002A238B /* Pouzivatel.swift */; };
+		3B07B1722BEE6373002A238B /* Polozka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1712BEE6373002A238B /* Polozka.swift */; };
+		3B07B1742BEE6A02002A238B /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1732BEE6A02002A238B /* MainViewViewModel.swift */; };
+		3B07B1762BEE6A11002A238B /* PolozkyItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1752BEE6A11002A238B /* PolozkyItemViewViewModel.swift */; };
+		3B07B1782BEE6A21002A238B /* PolozkaViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1772BEE6A21002A238B /* PolozkaViewViewModel.swift */; };
+		3B07B17A2BEE6A2F002A238B /* NavigateViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1792BEE6A2F002A238B /* NavigateViewViewModel.swift */; };
+		3B07B17C2BEE6A3A002A238B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B17B2BEE6A3A002A238B /* LoginViewModel.swift */; };
+		3B07B17E2BEE6A51002A238B /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B17D2BEE6A51002A238B /* RegisterViewViewModel.swift */; };
+		3B07B1802BEE6A5E002A238B /* NovaPolozkaViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B17F2BEE6A5E002A238B /* NovaPolozkaViewViewModel.swift */; };
+		3B07B1822BEE6A6B002A238B /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1812BEE6A6B002A238B /* ProfileViewViewModel.swift */; };
+		3B07B1842BEE7760002A238B /* NavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07B1832BEE7760002A238B /* NavigateView.swift */; };
 		3BC0FDFD2BEE225500215E16 /* FotimSFRIv2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FDFC2BEE225500215E16 /* FotimSFRIv2App.swift */; };
-		3BC0FDFF2BEE225500215E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FDFE2BEE225500215E16 /* ContentView.swift */; };
+		3BC0FDFF2BEE225500215E16 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FDFE2BEE225500215E16 /* MainView.swift */; };
 		3BC0FE012BEE225600215E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0FE002BEE225600215E16 /* Assets.xcassets */; };
 		3BC0FE042BEE225600215E16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0FE032BEE225600215E16 /* Preview Assets.xcassets */; };
 		3BC0FE0E2BEE225600215E16 /* FotimSFRIv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FE0D2BEE225600215E16 /* FotimSFRIv2Tests.swift */; };
@@ -34,9 +55,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B07B1582BEE287F002A238B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FotimSFRIv2/Other/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3B07B15F2BEE5FD5002A238B /* PolozkyItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolozkyItemView.swift; sourceTree = "<group>"; };
+		3B07B1612BEE6003002A238B /* PolozkaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolozkaView.swift; sourceTree = "<group>"; };
+		3B07B1672BEE6047002A238B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3B07B1692BEE6053002A238B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		3B07B16B2BEE6091002A238B /* NovaPolozkaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPolozkaView.swift; sourceTree = "<group>"; };
+		3B07B16D2BEE60DF002A238B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3B07B16F2BEE636C002A238B /* Pouzivatel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pouzivatel.swift; sourceTree = "<group>"; };
+		3B07B1712BEE6373002A238B /* Polozka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polozka.swift; sourceTree = "<group>"; };
+		3B07B1732BEE6A02002A238B /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		3B07B1752BEE6A11002A238B /* PolozkyItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolozkyItemViewViewModel.swift; sourceTree = "<group>"; };
+		3B07B1772BEE6A21002A238B /* PolozkaViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolozkaViewViewModel.swift; sourceTree = "<group>"; };
+		3B07B1792BEE6A2F002A238B /* NavigateViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateViewViewModel.swift; sourceTree = "<group>"; };
+		3B07B17B2BEE6A3A002A238B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3B07B17D2BEE6A51002A238B /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		3B07B17F2BEE6A5E002A238B /* NovaPolozkaViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPolozkaViewViewModel.swift; sourceTree = "<group>"; };
+		3B07B1812BEE6A6B002A238B /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		3B07B1832BEE7760002A238B /* NavigateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateView.swift; sourceTree = "<group>"; };
 		3BC0FDF92BEE225500215E16 /* FotimSFRIv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotimSFRIv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC0FDFC2BEE225500215E16 /* FotimSFRIv2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotimSFRIv2App.swift; sourceTree = "<group>"; };
-		3BC0FDFE2BEE225500215E16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BC0FDFE2BEE225500215E16 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3BC0FE002BEE225600215E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BC0FE032BEE225600215E16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BC0FE092BEE225600215E16 /* FotimSFRIv2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FotimSFRIv2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B07B1532BEE275C002A238B /* FirebaseAuth in Frameworks */,
+				3B07B1552BEE275C002A238B /* FirebaseFirestore in Frameworks */,
+				3B07B1572BEE275C002A238B /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +113,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B07B15A2BEE3710002A238B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B07B16F2BEE636C002A238B /* Pouzivatel.swift */,
+				3B07B1712BEE6373002A238B /* Polozka.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B07B15B2BEE371B002A238B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0FE002BEE225600215E16 /* Assets.xcassets */,
+				3B07B1582BEE287F002A238B /* GoogleService-Info.plist */,
+				3BC0FDFC2BEE225500215E16 /* FotimSFRIv2App.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3B07B15C2BEE3723002A238B /* PreviewContent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PreviewContent;
+			sourceTree = "<group>";
+		};
+		3B07B15D2BEE3730002A238B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3B07B1732BEE6A02002A238B /* MainViewViewModel.swift */,
+				3B07B1752BEE6A11002A238B /* PolozkyItemViewViewModel.swift */,
+				3B07B1772BEE6A21002A238B /* PolozkaViewViewModel.swift */,
+				3B07B1792BEE6A2F002A238B /* NavigateViewViewModel.swift */,
+				3B07B17B2BEE6A3A002A238B /* LoginViewModel.swift */,
+				3B07B17D2BEE6A51002A238B /* RegisterViewViewModel.swift */,
+				3B07B17F2BEE6A5E002A238B /* NovaPolozkaViewViewModel.swift */,
+				3B07B1812BEE6A6B002A238B /* ProfileViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3B07B15E2BEE373B002A238B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0FDFE2BEE225500215E16 /* MainView.swift */,
+				3B07B15F2BEE5FD5002A238B /* PolozkyItemView.swift */,
+				3B07B1612BEE6003002A238B /* PolozkaView.swift */,
+				3B07B1672BEE6047002A238B /* LoginView.swift */,
+				3B07B1692BEE6053002A238B /* RegisterView.swift */,
+				3B07B16B2BEE6091002A238B /* NovaPolozkaView.swift */,
+				3B07B16D2BEE60DF002A238B /* ProfileView.swift */,
+				3B07B1832BEE7760002A238B /* NavigateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3BC0FDF02BEE225500215E16 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +192,11 @@
 		3BC0FDFB2BEE225500215E16 /* FotimSFRIv2 */ = {
 			isa = PBXGroup;
 			children = (
-				3BC0FDFC2BEE225500215E16 /* FotimSFRIv2App.swift */,
-				3BC0FDFE2BEE225500215E16 /* ContentView.swift */,
-				3BC0FE002BEE225600215E16 /* Assets.xcassets */,
+				3B07B15E2BEE373B002A238B /* Views */,
+				3B07B15D2BEE3730002A238B /* ViewModels */,
+				3B07B15C2BEE3723002A238B /* PreviewContent */,
+				3B07B15B2BEE371B002A238B /* Other */,
+				3B07B15A2BEE3710002A238B /* Models */,
 				3BC0FE022BEE225600215E16 /* Preview Content */,
 			);
 			path = FotimSFRIv2;
@@ -143,6 +243,11 @@
 			dependencies = (
 			);
 			name = FotimSFRIv2;
+			packageProductDependencies = (
+				3B07B1522BEE275C002A238B /* FirebaseAuth */,
+				3B07B1542BEE275C002A238B /* FirebaseFirestore */,
+				3B07B1562BEE275C002A238B /* FirebaseFirestoreSwift */,
+			);
 			productName = FotimSFRIv2;
 			productReference = 3BC0FDF92BEE225500215E16 /* FotimSFRIv2.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +320,9 @@
 				Base,
 			);
 			mainGroup = 3BC0FDF02BEE225500215E16;
+			packageReferences = (
+				3B07B1512BEE275C002A238B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3BC0FDFA2BEE225500215E16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +341,7 @@
 			files = (
 				3BC0FE042BEE225600215E16 /* Preview Assets.xcassets in Resources */,
 				3BC0FE012BEE225600215E16 /* Assets.xcassets in Resources */,
+				3B07B1592BEE287F002A238B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +366,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BC0FDFF2BEE225500215E16 /* ContentView.swift in Sources */,
+				3B07B1682BEE6047002A238B /* LoginView.swift in Sources */,
+				3B07B16E2BEE60DF002A238B /* ProfileView.swift in Sources */,
+				3B07B17E2BEE6A51002A238B /* RegisterViewViewModel.swift in Sources */,
+				3B07B1822BEE6A6B002A238B /* ProfileViewViewModel.swift in Sources */,
+				3B07B1742BEE6A02002A238B /* MainViewViewModel.swift in Sources */,
+				3B07B1842BEE7760002A238B /* NavigateView.swift in Sources */,
+				3B07B1722BEE6373002A238B /* Polozka.swift in Sources */,
+				3B07B17C2BEE6A3A002A238B /* LoginViewModel.swift in Sources */,
+				3B07B1762BEE6A11002A238B /* PolozkyItemViewViewModel.swift in Sources */,
+				3BC0FDFF2BEE225500215E16 /* MainView.swift in Sources */,
+				3B07B1602BEE5FD5002A238B /* PolozkyItemView.swift in Sources */,
+				3B07B16A2BEE6053002A238B /* RegisterView.swift in Sources */,
 				3BC0FDFD2BEE225500215E16 /* FotimSFRIv2App.swift in Sources */,
+				3B07B17A2BEE6A2F002A238B /* NavigateViewViewModel.swift in Sources */,
+				3B07B1622BEE6003002A238B /* PolozkaView.swift in Sources */,
+				3B07B1702BEE636C002A238B /* Pouzivatel.swift in Sources */,
+				3B07B1782BEE6A21002A238B /* PolozkaViewViewModel.swift in Sources */,
+				3B07B1802BEE6A5E002A238B /* NovaPolozkaViewViewModel.swift in Sources */,
+				3B07B16C2BEE6091002A238B /* NovaPolozkaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +551,11 @@
 				DEVELOPMENT_TEAM = 2RL4QQQRWF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fotim S FRI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +580,11 @@
 				DEVELOPMENT_TEAM = 2RL4QQQRWF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fotim S FRI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +714,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B07B1512BEE275C002A238B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B07B1522BEE275C002A238B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B07B1512BEE275C002A238B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3B07B1542BEE275C002A238B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B07B1512BEE275C002A238B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3B07B1562BEE275C002A238B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B07B1512BEE275C002A238B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BC0FDF12BEE225500215E16 /* Project object */;
 }
