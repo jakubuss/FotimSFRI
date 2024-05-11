@@ -35,6 +35,8 @@
 		3BC0FE0E2BEE225600215E16 /* FotimSFRIv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FE0D2BEE225600215E16 /* FotimSFRIv2Tests.swift */; };
 		3BC0FE182BEE225600215E16 /* FotimSFRIv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FE172BEE225600215E16 /* FotimSFRIv2UITests.swift */; };
 		3BC0FE1A2BEE225600215E16 /* FotimSFRIv2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FE192BEE225600215E16 /* FotimSFRIv2UITestsLaunchTests.swift */; };
+		3BFEB0E52BEF914D0089278C /* HlavickaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFEB0E42BEF914D0089278C /* HlavickaView.swift */; };
+		3BFEB0E72BEF99F00089278C /* LOGO_FRI.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFEB0E62BEF99F00089278C /* LOGO_FRI.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		3BC0FE132BEE225600215E16 /* FotimSFRIv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FotimSFRIv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC0FE172BEE225600215E16 /* FotimSFRIv2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotimSFRIv2UITests.swift; sourceTree = "<group>"; };
 		3BC0FE192BEE225600215E16 /* FotimSFRIv2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotimSFRIv2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BFEB0E42BEF914D0089278C /* HlavickaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HlavickaView.swift; sourceTree = "<group>"; };
+		3BFEB0E62BEF99F00089278C /* LOGO_FRI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO_FRI.png; path = "FotimSFRIv2/Preview Content/LOGO_FRI.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 				3B07B16B2BEE6091002A238B /* NovaPolozkaView.swift */,
 				3B07B16D2BEE60DF002A238B /* ProfileView.swift */,
 				3B07B1832BEE7760002A238B /* NavigateView.swift */,
+				3BFEB0E42BEF914D0089278C /* HlavickaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 		3BC0FE022BEE225600215E16 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				3BFEB0E62BEF99F00089278C /* LOGO_FRI.png */,
 				3BC0FE032BEE225600215E16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -339,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFEB0E72BEF99F00089278C /* LOGO_FRI.png in Resources */,
 				3BC0FE042BEE225600215E16 /* Preview Assets.xcassets in Resources */,
 				3BC0FE012BEE225600215E16 /* Assets.xcassets in Resources */,
 				3B07B1592BEE287F002A238B /* GoogleService-Info.plist in Resources */,
@@ -369,6 +376,7 @@
 				3B07B1682BEE6047002A238B /* LoginView.swift in Sources */,
 				3B07B16E2BEE60DF002A238B /* ProfileView.swift in Sources */,
 				3B07B17E2BEE6A51002A238B /* RegisterViewViewModel.swift in Sources */,
+				3BFEB0E52BEF914D0089278C /* HlavickaView.swift in Sources */,
 				3B07B1822BEE6A6B002A238B /* ProfileViewViewModel.swift in Sources */,
 				3B07B1742BEE6A02002A238B /* MainViewViewModel.swift in Sources */,
 				3B07B1842BEE7760002A238B /* NavigateView.swift in Sources */,
