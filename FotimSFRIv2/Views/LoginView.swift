@@ -20,7 +20,7 @@ struct LoginView: View {
                              podNadpis: "Očami Žabku",
                              podfarbeniePozadia: Color.blue,
                              podfarbenieTextu: Color.yellow)
-                .offset(y: 48)
+                .offset(y: 45)
                 //Prihlasovacie udaje -> mail, heslo
                 Form{
                     TextField("Zadaj Email", text: $email)

@@ -19,7 +19,7 @@ struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
                          podNadpis: "Fotím s FRI",
                          podfarbeniePozadia: Color.yellow,
                          podfarbenieTextu: Color.blue)
-            .padding(.bottom, 20)
+            //.padding(.bottom, 20)
             Spacer()
             
         }
@@ -40,10 +40,15 @@ struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
                     Text("Registruj")
                         .foregroundColor(Color.blue)
                         .bold()
+                        
                 }
+                .padding()
+                    
             }
-        }
-        VStack{
+            
+        } .offset(y: -20)
+        
+        /*VStack{ //nahradene tlacidlom BACK v lavo hore
             Text("Máš už účet?")
             //Button("Vytvor účet") { //prechod do registracie
             NavigationLink("Vráť ma späť!", destination: LoginView())
@@ -51,7 +56,7 @@ struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
                 .bold()
                 
             
-        }
+        } */
         .padding(.bottom, 20)
         //Guest prihlasenie (eh asi nie, skor prihlasit a base prava) / registracia
         Spacer()
