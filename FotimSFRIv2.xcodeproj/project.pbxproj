@@ -35,6 +35,7 @@
 		3BC0FE0E2BEE225600215E16 /* FotimSFRIv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FE0D2BEE225600215E16 /* FotimSFRIv2Tests.swift */; };
 		3BC0FE182BEE225600215E16 /* FotimSFRIv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FE172BEE225600215E16 /* FotimSFRIv2UITests.swift */; };
 		3BC0FE1A2BEE225600215E16 /* FotimSFRIv2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0FE192BEE225600215E16 /* FotimSFRIv2UITestsLaunchTests.swift */; };
+		3BD5D1CB2BF1EFBC00C2780B /* LogRegButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5D1CA2BF1EFBC00C2780B /* LogRegButton.swift */; };
 		3BFEB0E52BEF914D0089278C /* HlavickaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFEB0E42BEF914D0089278C /* HlavickaView.swift */; };
 		3BFEB0E72BEF99F00089278C /* LOGO_FRI.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFEB0E62BEF99F00089278C /* LOGO_FRI.png */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		3BC0FE132BEE225600215E16 /* FotimSFRIv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FotimSFRIv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC0FE172BEE225600215E16 /* FotimSFRIv2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotimSFRIv2UITests.swift; sourceTree = "<group>"; };
 		3BC0FE192BEE225600215E16 /* FotimSFRIv2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotimSFRIv2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BD5D1CA2BF1EFBC00C2780B /* LogRegButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRegButton.swift; sourceTree = "<group>"; };
 		3BFEB0E42BEF914D0089278C /* HlavickaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HlavickaView.swift; sourceTree = "<group>"; };
 		3BFEB0E62BEF99F00089278C /* LOGO_FRI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO_FRI.png; path = "FotimSFRIv2/Preview Content/LOGO_FRI.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 				3B07B16D2BEE60DF002A238B /* ProfileView.swift */,
 				3B07B1832BEE7760002A238B /* NavigateView.swift */,
 				3BFEB0E42BEF914D0089278C /* HlavickaView.swift */,
+				3BD5D1CA2BF1EFBC00C2780B /* LogRegButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				3B07B1602BEE5FD5002A238B /* PolozkyItemView.swift in Sources */,
 				3B07B16A2BEE6053002A238B /* RegisterView.swift in Sources */,
 				3BC0FDFD2BEE225500215E16 /* FotimSFRIv2App.swift in Sources */,
+				3BD5D1CB2BF1EFBC00C2780B /* LogRegButton.swift in Sources */,
 				3B07B17A2BEE6A2F002A238B /* NavigateViewViewModel.swift in Sources */,
 				3B07B1622BEE6003002A238B /* PolozkaView.swift in Sources */,
 				3B07B1702BEE636C002A238B /* Pouzivatel.swift in Sources */,

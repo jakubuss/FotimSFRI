@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    //premenne mail a heslo
-    @State var email = ""
-    @State var heslo = ""
+    //premenne mail a heslo z instancie triedy
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationView{
@@ -23,21 +22,15 @@ struct LoginView: View {
                 .offset(y: 45)
                 //Prihlasovacie udaje -> mail, heslo
                 Form{
-                    TextField("Zadaj Email", text: $email)
+                    TextField("Zadaj Email", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    SecureField("Zadaj heslo", text: $heslo)
+                        .autocapitalization(.none)
+                    SecureField("Zadaj heslo", text: $viewModel.heslo)
                         .textFieldStyle(DefaultTextFieldStyle())
                     
-                    Button{
-                        
-                    } label:{
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 25.0)
-                                .foregroundColor(Color.yellow)
-                            Text("Prihlásenie")
-                                .foregroundColor(Color.blue)
-                                .bold()
-                        }
+    
+                    LogRegButton(nadpis: "Prihlásenie", farba: Color.yellow){
+                        //pokus o prihlasenie
                     }
                 }
                 VStack{

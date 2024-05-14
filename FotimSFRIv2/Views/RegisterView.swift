@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
-    @State var prezyvka = ""
-    @State var email = ""
-    @State var heslo = ""
+    @StateObject var registerViewViewModel = RegisterViewViewModel()
     
     
     var body: some View {
@@ -24,26 +22,18 @@ struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
             
         }
         Form{
-            TextField("Zadaj Prezývku", text: $prezyvka)
+            TextField("Zadaj Prezývku", text: $registerViewViewModel.prezyvka)
                 .textFieldStyle(DefaultTextFieldStyle())
-            TextField("Zadaj Email", text: $email)
+            TextField("Zadaj Email", text: $registerViewViewModel.email)
                 .textFieldStyle(DefaultTextFieldStyle())
-            SecureField("Zadaj Heslo", text: $heslo)
+                .autocapitalization(.none)
+            SecureField("Zadaj Heslo", text: $registerViewViewModel.heslo)
                 .textFieldStyle(DefaultTextFieldStyle())
             
-            Button{
+            //button
+            LogRegButton(nadpis: "Registruj",
+                         farba: .blue){
                 
-            } label:{
-                ZStack{
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .foregroundColor(Color.yellow)
-                    Text("Registruj")
-                        .foregroundColor(Color.blue)
-                        .bold()
-                        
-                }
-                .padding()
-                    
             }
             
         } .offset(y: -20)
@@ -57,7 +47,7 @@ struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
                 
             
         } */
-        .padding(.bottom, 20)
+        .padding(.bottom, 50)
         //Guest prihlasenie (eh asi nie, skor prihlasit a base prava) / registracia
         Spacer()
         
