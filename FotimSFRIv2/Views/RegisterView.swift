@@ -54,6 +54,8 @@ struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
     }
 }
 
-#Preview {
-    RegisterView()
+struct RegisterView_Previews: PreviewProvider {
+    static var previews: some View {
+        RegisterView()
+    }
 }

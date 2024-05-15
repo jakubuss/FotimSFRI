@@ -4,7 +4,7 @@
 //
 //  Created by Jakub on 13/05/2024.
 //
-
+// Tlacidlo vseobecne
 import SwiftUI
 
 struct LogRegButton: View {
@@ -30,10 +30,8 @@ struct LogRegButton: View {
         }
     }
 }
-
-#Preview {
-    LogRegButton(nadpis: "Nadpis",
-                 farba: .yellow) {
-        //funkcionalita
+struct LogRegButton_Previews: PreviewProvider {
+    static var previews: some View {
+        LogRegButton(nadpis: "Nadpis", farba: .yellow) { }
     }
 }

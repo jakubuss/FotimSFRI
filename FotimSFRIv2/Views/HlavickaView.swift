@@ -4,7 +4,7 @@
 //
 //  Created by Jakub on 11/05/2024.
 //
-
+// Horny layout vseobcne
 import SwiftUI
 
 struct HlavickaView: View {
@@ -69,9 +69,12 @@ struct HlavickaView: View {
         } */ //funkcia na citanie Obrazku
 }
 
-#Preview {
-    HlavickaView(nadpis: "Nadpis",
-                 podNadpis: "Podnadpis",
-                 podfarbeniePozadia: .blue,
-                 podfarbenieTextu: .yellow)
+
+
+struct HlavickaView_Previews: PreviewProvider {
+    static var previews: some View {
+        HlavickaView(nadpis: "Nadpis", podNadpis: "Podnadpis",
+                   podfarbeniePozadia: .blue,
+                   podfarbenieTextu: .yellow)
+    }
 }

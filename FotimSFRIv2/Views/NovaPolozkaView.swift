@@ -13,6 +13,11 @@ struct NovaPolozkaView: View {
     }
 }
 
-#Preview {
-    NovaPolozkaView()
+struct NovaPolozkaView_Previews: PreviewProvider {
+    static var previews: some View {
+        NovaPolozkaView(newItemPresented: Binding(get: {
+            true
+        }, set: { _ in
+        }))
+    }
 }
