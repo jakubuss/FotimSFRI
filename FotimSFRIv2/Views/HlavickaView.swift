@@ -78,3 +78,5 @@ struct HlavickaView_Previews: PreviewProvider {
                    podfarbenieTextu: .yellow)
     }
 }
+
+

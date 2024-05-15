@@ -6,3 +6,25 @@
 //
 
 import Foundation
+import FirebaseAuth
+import FirebaseFirestore
+
+class ProfileViewViewModel : ObservableObject {
+    
+    init () {
+        self.pouzivatel = PouzivatelManazer.shared.pouzivatel
+        
+    }
+    
+    @Published var pouzivatel: Pouzivatel? = nil
+    
+    func logOut() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error)
+        }
+    }
+    
+    
+}

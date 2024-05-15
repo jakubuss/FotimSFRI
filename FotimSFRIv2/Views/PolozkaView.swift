@@ -4,7 +4,7 @@
 //
 //  Created by Jakub on 10/05/2024.
 //
-
+import FirebaseFirestoreSwift
 import SwiftUI
 
 //zobrazenie polozky
@@ -23,31 +23,41 @@ struct PolozkaView: View {
     var body: some View {
         NavigationView {
             VStack { //vertikalny stack
-                 List(items) { item in
+                List(items) { item in
                     PolozkyItemView(item: item)
-                         .swipeActions {
-                             Button { //tlacidlo na mazanie poloziek podla ID
-                                 viewModel.delete(id: item.id)
-                             } label: {
-                                 Text("Zmaz")  
-                                     .foregroundColor(Color.red)
-                             } 
-                         }
-                 }
-                 .listStyle(PlainListStyle())
+                        .swipeActions {
+                            Button { //tlacidlo na mazanie poloziek podla ID
+                                viewModel.delete(id: item.id)
+                            } label: {
+                                Text("Zmaz")
+                                    .foregroundColor(Color.red)
+                            }
+                        }
+                }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("Fotim s FRI") //nadpis
             .toolbar {
-                Button { //tlacidlo na zobrazenie novej polozky
-                    viewModel.showingNovaPolozkaView = true
-                } label: {
-                    Image(systemName: "magnifyingglass")
+                if viewModel.user?.jeAdmin ?? false {
+                    
+                    Menu {
+                        Button { //tlacidlo na zobrazenie novej polozky
+                            viewModel.showingNovaPolozkaView = true
+                        } label: {
+                            Text("Vytvor novu polozku!")
+                        }
+                        
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                        
+                    }
                 }
             }
             .sheet(isPresented: $viewModel.showingNovaPolozkaView) {
                 NovaPolozkaView(newItemPresented: $viewModel.showingNovaPolozkaView)
-            }
-        }
+            } .onAppear{
+                PouzivatelManazer.shared.fetchUser()
+            }}
     }
 }
 

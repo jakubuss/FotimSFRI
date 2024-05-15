@@ -24,15 +24,23 @@ struct RegisterView: View { // meno(dlhe tak prezyvka) - mail - heslo - accept
         Form{
             TextField("Zadaj Prezývku", text: $registerViewViewModel.prezyvka)
                 .textFieldStyle(DefaultTextFieldStyle())
+                .autocorrectionDisabled(true)
+                .background(Color(.secondarySystemBackground))
             TextField("Zadaj Email", text: $registerViewViewModel.email)
                 .textFieldStyle(DefaultTextFieldStyle())
                 .autocapitalization(.none)
+                .autocorrectionDisabled(true)
+                .keyboardType(.emailAddress)
+                .background(Color(.secondarySystemBackground))
             SecureField("Zadaj Heslo", text: $registerViewViewModel.heslo)
                 .textFieldStyle(DefaultTextFieldStyle())
+                .autocorrectionDisabled(true)
+                .background(Color(.secondarySystemBackground))
             
             //button
             LogRegButton(nadpis: "Registruj",
                          farba: .blue){
+                registerViewViewModel.registruj()
                 
             }
             

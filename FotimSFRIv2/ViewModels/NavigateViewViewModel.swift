@@ -6,3 +6,7 @@
 //
 //nevidim vyznam ale bude navigator vo verzii 3
 import Foundation
+
+class NavigateViewViewModel : ObservableObject {
+    
+}

@@ -14,6 +14,7 @@ class NovaPolozkaViewViewModel : ObservableObject {
     @Published var link = ""
     @Published var showAlert = false
     @Published var pocetFotiek = "" //bude brat z disku ak bude
+    @Published var datum = Date.now
     
     init() { }
     
@@ -31,8 +32,8 @@ class NovaPolozkaViewViewModel : ObservableObject {
         let novaPolozka = Polozka(id: newId,
                                    title: title,
                                    link: link,
-                                   createdDate: Date().timeIntervalSince1970,
-                                  isFB: false, isLD: false, isIG: false, pocetFotiek: pocetFotiek)
+                                   createdDate: Date().timeIntervalSince1970,datum: Date.now,
+                                  isFB: false/* isLD: false, isIG: false,*/)
         
         let db = Firestore.firestore() // DTbaza
         db.collection("pouzivatelia") // pouzivatel/uid/polozka/IDpolozky/prehodenie do Encodable

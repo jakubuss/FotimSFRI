@@ -21,10 +21,10 @@ struct LoginView: View {
                              podfarbenieTextu: Color.yellow)
                 .offset(y: 45)
                 //Prihlasovacie udaje -> mail, heslo
-                Form{
-                    if !loginViewModel.errorMessage.isEmpty {
+                Form {
+                   /* if !loginViewModel.errorMessage.isEmpty {
                         Text(loginViewModel.errorMessage).foregroundColor(.red)
-                    }
+                    } */
                     TextField("Zadaj Email", text: $loginViewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocapitalization(.none)
@@ -34,9 +34,10 @@ struct LoginView: View {
     
                     LogRegButton(nadpis: "Prihlásenie", farba: .yellow){
                         //pokus o prihlasenie
-                        loginViewModel.prihlas  ()
+                        loginViewModel.prihlas()
                     }
                 }
+                
                 VStack{
                     Text("Ešte nemáš účet?")
                     //Button("Vytvor účet") { //prechod do registracie
@@ -53,6 +54,8 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+    }
 }

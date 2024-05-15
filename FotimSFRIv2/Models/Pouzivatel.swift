@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Pouzivatel: Codable, Equatable {
+     
+    let id: String
+    let prezyvka: String
+    let email: String
+    let jeAdmin: Bool
+    let joined: TimeInterval
+}
