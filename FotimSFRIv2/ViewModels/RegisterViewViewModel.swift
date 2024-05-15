@@ -4,7 +4,7 @@
 //
 //  Created by Jakub on 10/05/2024.
 //
-
+//register
 import Foundation
 
 class RegisterViewViewModel : ObservableObject {

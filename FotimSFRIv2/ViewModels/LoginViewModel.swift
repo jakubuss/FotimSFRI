@@ -7,6 +7,7 @@
 
 import Foundation
 import FirebaseAuth 
+//login
 
 class LoginViewModel : ObservableObject {
     @Published var email = ""
@@ -25,14 +26,14 @@ class LoginViewModel : ObservableObject {
     
     func kontrolaUdajov() -> Bool {
         errorMessage = ""
-        
+        //ochrana prazdneho meista
         guard !email.isEmpty,
               !heslo.isEmpty else {
             errorMessage = "Policko nesmie ostat prazdne"
             
             return false
         }
-        
+        //ochrana emailu co musi obsahovat
         guard email.contains("@") && email.contains(".") else {
             errorMessage = "Nespravne zadany format emailu"
             return false
